@@ -1,0 +1,56 @@
+.about {
+	width: 85%;
+	background-color: #fff;
+	border-radius: 2px;
+	position: relative;
+	margin: auto;
+	overflow:auto;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.abt-ele {
+	display:block;
+	margin: 4%;
+	overflow: auto;
+}
+
+hr {
+	width: auto;
+	margin: 0.5em 0px;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 1080px)
+{
+	.about {
+		width: 95%;
+	}
+	.abt-ele{
+		margin: 5%;
+	}
+}
+
+@media only screen and (max-width: 766px)
+{
+	.about {
+		width: 100%;
+		margin: 0px;
+		border-radius:0px;
+	}
+	
+	.abt-ele
+	{
+		margin: 0%;
+	}
+}

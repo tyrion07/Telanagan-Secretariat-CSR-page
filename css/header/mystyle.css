@@ -1,0 +1,240 @@
+body
+{
+	font-family: Verdana, Geneva, sans-serif;
+	margin: 0px;
+	z-index:-20;
+	/*background: #448D00;*/
+	height: 3000px;
+}
+
+div {
+	background-color: transparent;
+}
+
+.back {
+	position: fixed;
+	width: 100%;
+	z-index:-10;
+	min-height:100%;
+	min-width:100%;
+	width:auto;
+	height:auto;
+	opacity:.4;
+}
+
+/*.bcolor
+{
+	background: rgba(68, 141, 0, 0.7);
+	z-index: -9;
+	min-height:100%;
+	min-width:100%;
+	width:auto;
+	height:auto;
+}
+*/
+img.emblem {
+	width: 55px;
+}
+
+
+
+.header-top {
+	width:100%;
+	display:block;
+	overflow:auto;
+	background-color:#fff;
+	z-index: 1000;
+}
+.header-bottom {
+	width: 100%;
+	display:block;
+	position: fixed;
+	z-index: 1000;
+}
+
+.heading {
+	margin: 0.5em;
+}
+
+.ht-left {
+	display: inline;
+	float:left;
+	margin: 10px;
+}
+
+.ht-right {
+	float:right;
+	margin: 5px;
+}
+
+.htr-in {
+	dislplay: inline;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+}
+
+ul.navlist {
+	list-style-type: none;
+	margin-left: 0%;
+}
+
+li.navitem {
+	margin: 5px 10px;
+	display: inline;
+	float:left;
+}
+
+
+
+button.login {
+	border: none;
+	border-style:hidden;
+	box-shadow:none;
+	outline: none;
+	
+	width: 8em;
+	height: 3em;
+	margin-top: 0.5em;
+	background-color: #333;
+	color:#ddd; 
+	-webkit-transition:background .3s ease;-ms-transition:background .3s ease;transition:background .3s ease;
+}
+
+button.login:hover {
+	background-color: #448D00;	
+}
+
+.searchbox {
+	margin-top: 0.5em;
+	height: 3em;
+	outline:none;
+	border:none;
+	padding-left: 1em;
+	background-color:#333;
+	color: #ddd;
+}
+
+.searchbox:placeholder-shown {
+	font-weight:bold;
+}
+
+input[type=text] {
+    width: 8em;
+	-webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	
+}
+
+input[type=text]:focus {
+    width: 16em;
+}
+
+.fake-head {
+	width: 100%;
+	height: 70px;
+	background-color:transparent;
+}
+
+.header-bottom {		
+	-moz-box-shadow: 0px 1px 10px #333;
+	-webkit-box-shadow: 0px 1px 10px #333;
+	box-shadow: 0px 1px 10px #333;
+}
+
+@media only screen and (max-width: 1600px)
+{
+	
+}
+
+@media only screen and (max-width: 1366px)
+{
+.header{
+	width:100%;
+	margin: 0%;
+	border-radius: 0px;
+}
+
+#cssmenu {
+	padding-left: 0%;
+	border-radius: 0px;
+}
+}
+
+@media only screen and (max-width: 1080px)
+{
+
+body {
+	font-size: 1.5em;
+}
+
+img.emblem {
+	width: 80px;
+}
+
+.ht-left, .ht-right {
+	display:block;
+	float: left;
+}
+
+.ht-left {
+	font-size: 1.3em;
+}
+
+button.login {
+	font-size: 1.25em;
+}
+
+input[type=text] {
+    font-size: 1.25em;
+	width: 13em;
+	
+}
+
+input[type=text]:focus {
+    width: 13em;
+}
+
+
+.htl {
+	overflow:auto;
+
+}
+
+#cssmenu ul li a, #cssmenu ul ul li a{
+	font-size: 1.6em;	
+}
+
+.back
+{
+	display:none;
+}
+
+.fake-head {
+	height: 140px;
+}
+}
+
+@media only screen and (max-width: 766px)
+{
+body {
+	font-size: 1em;
+}
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #333333;
+}
