@@ -1,7 +1,7 @@
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 100; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -67,8 +67,55 @@
 .imgcontainer
 {
     text-align: center;
+
 }
 .imgonpop
 {
     margin-left:2.5em;
+
+}
+
+
+@media only screen and (max-width: 1080px)
+{
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.modal
+{
+    overflow-x: hidden;
+    z-index:100;
+    font-size: 1.7em;
+}
+
+.imgreg
+{
+    width:35%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.modal-content
+{
+    width:80%;
+    margin-left: 10%
+}
+.regbtns
+{
+    font-size: 1.5em;
+    width: 60%;
+    height: auto;
+    border-radius: .5em;
+
+}
+
+ table tr > *{
+        display: block;
+    }
+    table tr {
+        display: table-cell;
+    }
+
 }
