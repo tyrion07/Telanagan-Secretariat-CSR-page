@@ -1,0 +1,18 @@
+#below-slide
+{
+	width: 80%;
+	margin-left: 10%;
+	height:80%;
+	background-color: white;
+	border-color: white;
+	border-radius: 8px;
+	/*box-shadow:*/ 
+	margin-bottom: 20%;
+}
+#below-slide h1
+{
+	text-align: center;
+	color: black;
+	font-weight: 300;
+	margin-top: 5%;
+}

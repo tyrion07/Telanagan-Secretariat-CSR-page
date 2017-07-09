@@ -4,7 +4,7 @@ body
 	margin: 0px;
 	z-index:-20;
 	/*background: #448D00;*/
-	height: 3000px;
+	height: auto;
 }
 
 div {

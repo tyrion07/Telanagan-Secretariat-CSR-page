@@ -76,7 +76,7 @@
 }
 
 
-@media only screen and (max-width: 1080px)
+@media only screen and (min-device-width: 320px) and (max-device-width: 766px) and (-webkit-min-device-pixel-ratio: 2)
 {
     html, body {
     max-width: 100%;
@@ -86,7 +86,7 @@
 .modal
 {
     overflow-x: hidden;
-    z-index:100;
+    z-index:10000;
     font-size: 1.7em;
 }
 
