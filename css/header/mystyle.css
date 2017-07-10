@@ -251,6 +251,6 @@ body::-webkit-scrollbar
 }
 
 body::-webkit-scrollbar-thumb
-{
+{	width: 6px;
 	background-color: #333333;
 }
