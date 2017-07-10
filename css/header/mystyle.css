@@ -10,7 +10,10 @@ body
 div {
 	background-color: transparent;
 }
-
+button
+{
+	cursor:pointer;
+}
 .back, .backimg {
 	position: fixed;
 	z-index:-10;
