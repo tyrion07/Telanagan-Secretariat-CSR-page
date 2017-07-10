@@ -1,5 +1,4 @@
 *{margin:0;padding:0;text-decoration:none}
-body{background:#555;}
 .header-bottom{position:relative;width:100%;background:#333;}
 .logo{position:relative;z-index:123;padding:10px;font:18px verdana;color:#6DDB07;float:left;width:15%}
 .logo a{color:#6DDB07;}
@@ -56,32 +55,38 @@ nav{width:100%;}
 #cssmenu ul ul,#cssmenu ul ul ul{position:relative;left:0;width:100%;margin:0;text-align:left}
 #cssmenu > ul > li.has-sub > a:after,#cssmenu > ul > li.has-sub > a:before,#cssmenu ul ul > li.has-sub > a:after,#cssmenu ul ul > li.has-sub > a:before{display:none}
 #cssmenu #head-mobile{display:block; padding: 1px; color:#ddd;font-size:12px;font-weight:700; background-color:#333;}
-.button
+.button, .button:active, .button:hover
 {
-	width:100px;
+	width:30%;
 	height:70px;
 	position:relative;
 	right:0;
 	top:0;
 	margin: 15px auto;
 	cursor:pointer;
-	z-index: 12399994;  
+	z-index: 50;  
 	border-radius:5px;
 }   /*mycode*/
-.button:after{position:absolute;top:32px;right:25px;display:block;height:4px;width:50px;border-top:4px solid #dddddd;border-bottom:4px solid #dddddd;content:''}
-.button:before{-webkit-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease;position:absolute;top:24px;right:25px;display:block;height:4px;width:50px;background:#ddd;content:''}
-.button.menu-opened:after{-webkit-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease;top:23px;border:0;height:2px;width:19px;background:#fff;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}
-.button.menu-opened:before{top:23px;background:#fff;width:19px;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)}
-#cssmenu .submenu-button{position:absolute;z-index:99;right:0;top:0;display:block;border-left:1px solid #444;height:100%;width:350px;cursor:pointer}
+.button:after{position:absolute;top:32px;display:block;height:4px;width:100%;border-top:4px solid #dddddd;border-bottom:4px solid #dddddd;content:''}
+.button:before{-webkit-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease;position:absolute;top:24px;display:block;height:4px;width:100%;background:#ddd;content:''}
+.button.menu-opened:after{left:45%;-webkit-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease;top:26px;border:0;height:4px;width:40px;background:#fff;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}
+.button.menu-opened:before{left:45%;top:26px;background:#fff;height:4px;width:40px;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)}
+#cssmenu .submenu-button{position:absolute;z-index:50;right:0;top:0;display:block;border-left:1px solid #444;height:100%;width:350px;cursor:pointer}
 #cssmenu .submenu-button.submenu-opened{background:#262626}
 #cssmenu ul ul .submenu-button{height:34px;width:34px}
-#cssmenu .submenu-button:after{position:absolute;top:22px;right:19px;width:8px;height:2px;display:block;background:#ddd;content:''}
+#cssmenu .submenu-button:after{position:absolute;top:31px;right:19px;width:32px;height:8px;display:block;background:#ddd;content:''}
 #cssmenu ul ul .submenu-button:after{top:15px;right:13px}
 #cssmenu .submenu-button.submenu-opened:after{background:#fff}
-#cssmenu .submenu-button:before{position:absolute;top:19px;right:22px;display:block;width:2px;height:8px;background:#ddd;content:''}
+#cssmenu .submenu-button:before{position:absolute;top:19px;right:31px;display:block;width:8px;height:32px;background:#ddd;content:''}
 #cssmenu ul ul .submenu-button:before{top:12px;right:16px}
 #cssmenu .submenu-button.submenu-opened:before{display:none}
 #cssmenu ul ul ul li.active a{border-left:none}
 #cssmenu > ul > li.has-sub > ul > li.active > a,#cssmenu > ul ul > li.has-sub > ul > li.active > a{border-top:none;}
 
 #cssmenu ul li a, #cssmenu ul ul li a{ line-height: 2em; }
+
+#cssmenu {
+	padding-left: 0%;
+	border-radius: 0px;
+}
+}

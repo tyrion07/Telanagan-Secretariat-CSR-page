@@ -1,24 +1,22 @@
-<!DOCTYPE html/>
+<!DOCTYPE html>
+<html>
 <head>
 <title>Corporate Social Responsibility Telangana</title>
 <link rel="icon" href="images/csr_1.png" type="image/png" />
 <link rel="stylesheet" href="css/header/style1.css" />
 <link href="css/header/mystyle.css" type="text/css" rel="stylesheet" />
+<link href="css/register_popup.css" type="text/css" rel="stylesheet" />
 <link href="css/about/about.css" type="text/css" rel="stylesheet" />
 
 </head>
-
-<body>
-
-<video autoplay loop class="back" muted plays-inline>
+<body id="body">
+<video autoplay loop class="back" id="video" muted plays-inline>
   <source src="videos/fbv.webm" type="video/webm">
   <source src="videos/fbv.mp4" type="video/mp4">
 </video>
+<img class="backimg" src="images/background.jpg">
 
 <div class="back bcolor"></div>
-
-
-
 
 <div class="header-top" id="123">
 <div class="htl">
@@ -39,37 +37,99 @@
 	<div class="ht-right">
         
        	<div class="htr-in">
-        <a href="http://www.google.co.in">
+        <a href="signin/signin.html">
             <button class="login">
             <b>LOGIN</b>
             </button>
         </a>
         </div>
         <div class="htr-in">
-        <a href="http://www.google.co.in">
-            <button class="login">
-            <b>REGISTER</b>
+        
+            <button id="myBtn" class="login">
+            	<b>REGISTER</b>
             </button>
-        </a>
+            <div id="myModal" class="modal fade">
+				<div class="modal-content">
+                <span class="close">&times;</span>
+                <table id="reg-tab">
+    			<tr>
+        		<td>
+  				<div class="imgContainer">
+            		<div class="imgonpop">
+                	<img  class="imgreg" src="images/government_icon.png" />
+            		</div>
+            
+            		<button class="regbtns">
+                  	<b>Government Agency</b>
+                	</button>
+     			</div>
+        		</td>
+               	<td>
+  				<div class="imgContainer">
+            		<div  class="imgonpop">
+                	<img  class="imgreg" src="images/company_icon.jpg" />
+            		</div>
+            
+            	<button class="regbtns">
+                <b>Company</b>
+                </button>
+     			</div>
+        		</td>
+               	<td>
+  				<div class="imgContainer">
+            		<div class="imgonpop">
+                	<img  class="imgreg" src="images/agency_icon.png" />
+            		</div>
+            
+            		<button class="regbtns">
+                  	<b>Implementing Agency</b>
+                	</button>
+     			</div>
+        		</td>
+			    <td>
+  				<div class="imgContainer">
+            		<div class="imgonpop">
+                	<img class="imgreg" src="images/serviceprovider_icon.jpg" />
+            		</div>
+            
+            		<button class="regbtns">
+                  	<b>Service Provider</b>
+                	</button>
+     			</div>
+        		</td>
+               	<td>
+  				<div class="imgContainer">
+            		<div class="imgonpop">
+                	<img class="imgreg" src="images/individual_icon.gif" />
+            		</div>
+            		
+                    <button class="regbtns">
+                  	<b>Individual</b>
+                	</button>
+     			</div>
+        		</td>
+        		</tr>
+        		</table>
+                
+            	<p align="center" id="para_already_signin">
+                <a href="./signup/signup.html"><font color="black">Already a Memeber? SIGNIN</font></a>
+                </p>
+                
+            	</div>
+        	</div>
         </div>
+
         <div class="htr-in">
 			<form>
 			<input type="text" name="search" placeholder="SEARCH" class="searchbox">
 			</form>
         </div>
             
-        
 	</div>	
         
 </div>
 <script src="js/jQuery.js" type="text/javascript"></script>
-<script>
-var x = $('.header-top').height();
-$(window).scroll(function(){
-	if(x > $(this).scrollTop()) { $("#theFixed").css("position", 'absolute'); $("#theFixed").css("top", 'auto');} 
-	else { $("#theFixed").css("position", 'fixed'); $("#theFixed").css("top", '0'); }
-});
-</script>
+<script src="js/register_popup.js"></script>
 
 <div class="header-bottom" id="theFixed">
 <nav id='cssmenu'>
@@ -79,7 +139,7 @@ $(window).scroll(function(){
 <li class='active'><a href='index.html'>HOME</a></li>
 <li><a href='#'>ABOUT</a>
 	<ul>
-    	<li><a href="#">What is CSR?</a></li>
+    	<li><a href="about_1.html">What is CSR?</a></li>
         <li><a href="#">About the CSR Portal</a></li>
         <li><a href="#">The companies act</a></li>
         <li><a href="#">What is the impact of CSR</a></li>
@@ -112,8 +172,17 @@ $(window).scroll(function(){
 </ul>
 </nav>
 </div>
+
 <script src="js/header/index.js"></script>
+<script>
+var x = $('.header-top').height();
+$(window).scroll(function(){
+	if(x > $(this).scrollTop()) { $("#theFixed").css("position", 'absolute'); $("#theFixed").css("top", 'auto');} 
+	else { $("#theFixed").css("position", 'fixed'); $("#theFixed").css("top", '0'); }
+});
+</script>
 <div class="fake-head"></div>
+
 
 <!-- header ends -->
 

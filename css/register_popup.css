@@ -9,7 +9,6 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-
 }
 
 /* Modal Content/Box */
@@ -31,6 +30,9 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
+	-webkit-transition:color .1s ease;
+	-ms-transition:color .1s ease;
+	transition:color .1s ease;
 }
 
 .close:hover,
@@ -38,6 +40,9 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+	-webkit-transition:color .1s ease;
+	-ms-transition:color .1s ease;
+	transition:color .1s ease;
 }
 
 .regbtns
@@ -45,14 +50,18 @@
     background-color: #333333;
     color: white;
     padding: 10px 10px;
-    margin-left: 2.5em;
     border-radius: 6px;
-    width: 150px;
+    width: 95%;
+	margin: 4px auto;
+	border:none;
+	-webkit-transition:background .3s ease;
+	-ms-transition:background .3s ease;
+	transition:background .3s ease;
 
 }
 .regbtns:hover
 {
-    background-color: #4CAF50;
+    background-color: #448D00;
     color: white;
 }
 #para_already_signin
@@ -64,21 +73,33 @@
     color: red;
 }
 
-.imgcontainer
+.imgContainer
 {
     text-align: center;
 
 }
 .imgonpop
 {
-    margin-left:2.5em;
-
+	
 }
 
+.imgreg {
+	width: 50%;
+}
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 766px) and (-webkit-min-device-pixel-ratio: 2)
+#reg-tab {
+	width: 100%;
+}
+
+#reg-tab td {
+	width: 20%;
+	position: relative;
+}
+
+@media only screen and (max-width: 1080px)
 {
-    html, body {
+
+html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -86,13 +107,22 @@
 .modal
 {
     overflow-x: hidden;
-    z-index:10000;
+    z-index:2000;
     font-size: 1.7em;
+}
+
+#reg-tab td {
+	display: block;
+	width: 100%;
+}
+
+#reg-tab {
+	width: 100%;
 }
 
 .imgreg
 {
-    width:35%;
+    width:100%;
     height: auto;
     margin-top: 5%;
 }
@@ -104,11 +134,11 @@
 }
 .regbtns
 {
-    font-size: 1.5em;
-    width: 60%;
-    height: auto;
+	height: 3em;
     border-radius: .5em;
-
+	font-size: 1em;
+	width: 90%;
+	margin: 5px auto;
 }
 
  table tr > *{
@@ -117,5 +147,34 @@
     table tr {
         display: table-cell;
     }
+	
 
+.imgContainer {
+	width: 50%;
+	margin: 0px auto;
+}
+
+.close {
+	font-size: 2em;
+}
+
+
+
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #333333;
 }
