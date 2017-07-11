@@ -36,7 +36,7 @@
 .faq ol
 {
 	visibility:visible;
-	margin: 2em;
+	margin: 2em 0em;
 	line-height:1.5;
 	-webkit-padding-start: 0px;
 }
