@@ -26,7 +26,7 @@
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 2em;
     font-weight: bold;
 	-webkit-transition:color .1s ease;
 	-ms-transition:color .1s ease;
@@ -94,16 +94,11 @@
 @media only screen and (max-width: 1000px)
 {
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
 
 .modal
 {
     overflow-x: hidden;
     z-index:1000;
-    font-size: 1.3em;
 }
 
 #reg-tab td {
@@ -131,7 +126,6 @@ html, body {
 {
 	height: 4em;
     border-radius: .5em;
-	font-size: 1em;
 	width: 90%;
 	margin: 5px auto;
 }
