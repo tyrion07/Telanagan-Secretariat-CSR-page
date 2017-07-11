@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Corporate Social Responsibility Telangana</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="images/csr_1.png" type="image/png" />
 <link rel="stylesheet" href="css/header/style1.css" />
 <link href="css/header/mystyle.css" type="text/css" rel="stylesheet" />
@@ -112,7 +113,7 @@
         		</table>
                 
             	<p align="center" id="para_already_signin">
-                <a href="./signup/signup.html"><font color="black">Already a Memeber? SIGNIN</font></a>
+                <a href="signin/signin.html""><font color="black">Already a Memeber? SIGNIN</font></a>
                 </p>
                 
             	</div>
@@ -152,7 +153,12 @@
         <li><a href="#">Proprietorship</a></li>
     </ul>
 </li>
-<li><a href='#'>PROJECTS</a></li>
+<li><a href='#'>PROJECTS</a>
+	<ul>
+    	<li><a href="#">--x--</a></li>
+        <li><a href="#">--x--</a></li>
+    </ul>
+</li>
 <li><a href='#'>IMPLEMENTING AGENCIES</a>
 	<ul>
     	<li><a href="#">Government Agencies</a></li>
@@ -166,7 +172,12 @@
         <li><a href="#">Products</a></li>
     </ul>
 </li>
-<li><a href='#'>HELP</a></li>
+<li><a href='#'>HELP</a>
+	<ul>
+    	<li><a href="#">--x--</a></li>
+        <li><a href="#">--x--</a></li>
+    </ul>
+</li>
 <li><a href='#'>NEWS</a></li>
 <li><a href='#'>GALLERY</a></li>
 </ul>
@@ -176,32 +187,51 @@
 <script src="js/header/index.js"></script>
 <script>
 var x = $('.header-top').height();
+var y = $(window).width();
 $(window).scroll(function(){
-	if(x > $(this).scrollTop()) { $("#theFixed").css("position", 'absolute'); $("#theFixed").css("top", 'auto');} 
-	else { $("#theFixed").css("position", 'fixed'); $("#theFixed").css("top", '0'); }
+	if(x > $(this).scrollTop()) 
+	{
+		$("#theFixed").css("position", 'relative');
+		$("#theFixed").css("top", 'auto');
+		$("#theFixed").css("margin", '0px auto');
+		$(".fake-head").css("height", '40px');
+	} 
+	else 
+	{
+		$("#theFixed").css("position", 'fixed'); 
+		$("#theFixed").css("top", '0');
+		if(y > 1230)
+		{
+			$("#theFixed").css("margin-left", '2.5%');
+		}
+		else
+		{
+			$("#theFixed").css("margin-left", '0%');
+		}
+		$(".fake-head").css("height", '95px');
+	}
 });
 </script>
 <div class="fake-head"></div>
-
 
 <!-- header ends -->
 <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">  </div>
-  <img src="images/slide_d.jpg" style="width:100%" height="500px">
+  <img src="images/slide_1.jpg" style="width:100%">
   <div class="text">   </div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">  </div>
-  <img src="images/slide_older2.jpg" style="width:100%" height="500px">
+  <img src="images/slide_2.jpg" style="width:100%">
   <div class="text">   </div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">  </div>
-  <img src="images/slide_water.jpg" style="width:100%" height="500px">
+  <img src="images/slide_3.jpg" style="width:100%">
   <div class="text">   </div>
 </div>
 

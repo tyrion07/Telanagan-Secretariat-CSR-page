@@ -1,5 +1,3 @@
-var hei = $( window ).height();
-
 (function($) {
 $.fn.menumaker = function(options) {  
  var cssmenu = $(this), settings = $.extend({
@@ -12,16 +10,9 @@ $.fn.menumaker = function(options) {
      var mainmenu = $(this).next('ul');
      if (mainmenu.hasClass('open')) { 
        mainmenu.slideToggle().removeClass('open');
-	   $("#cssmenu").css("height", 'auto');
-	   $("#cssmenu").css("overflow", 'hidden');
-	   $("body").css("height", 3000);
      }
      else {
        mainmenu.slideToggle().addClass('open');
-	   $("#cssmenu").css("height", '1101');
-	   $("#cssmenu").css("overflow", 'scroll');
-	   $("body").css("height", hei);
-	   
        if (settings.format === "dropdown") {
          mainmenu.find('ul').show();
        }

@@ -31,26 +31,12 @@ hr {
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 1080px)
+@media only screen and (max-width: 1000px)
 {
 	.about {
 		width: 95%;
 	}
 	.abt-ele{
 		margin: 5%;
-	}
-}
-
-@media only screen and (max-width: 766px)
-{
-	.about {
-		width: 100%;
-		margin: 0px;
-		border-radius:0px;
-	}
-	
-	.abt-ele
-	{
-		margin: 0%;
 	}
 }

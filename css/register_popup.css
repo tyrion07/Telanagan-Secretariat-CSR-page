@@ -15,11 +15,9 @@
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
     width: 70%;
     /*height:300px; *//* Could be more or less, depending on screen size */
-     border-style: solid;
+    border-style: solid;
     border-color: white;
     border-radius: 8px;
 }
@@ -33,6 +31,7 @@
 	-webkit-transition:color .1s ease;
 	-ms-transition:color .1s ease;
 	transition:color .1s ease;
+	margin: 10px;
 }
 
 .close:hover,
@@ -66,7 +65,7 @@
 }
 #para_already_signin
 {
-    margin-top: 3%;
+    margin: 3% 0%;
 }
 #para_already_signin.a:hover
 {
@@ -76,15 +75,11 @@
 .imgContainer
 {
     text-align: center;
+	width: 90%;
 
 }
-.imgonpop
-{
-	
-}
-
 .imgreg {
-	width: 50%;
+	width: 70%;
 }
 
 #reg-tab {
@@ -92,11 +87,11 @@
 }
 
 #reg-tab td {
-	width: 20%;
+	width:20%;
 	position: relative;
 }
 
-@media only screen and (max-width: 1080px)
+@media only screen and (max-width: 1000px)
 {
 
 html, body {
@@ -107,8 +102,8 @@ html, body {
 .modal
 {
     overflow-x: hidden;
-    z-index:2000;
-    font-size: 1.7em;
+    z-index:1000;
+    font-size: 1.3em;
 }
 
 #reg-tab td {
@@ -134,7 +129,7 @@ html, body {
 }
 .regbtns
 {
-	height: 3em;
+	height: 4em;
     border-radius: .5em;
 	font-size: 1em;
 	width: 90%;
@@ -155,26 +150,7 @@ html, body {
 }
 
 .close {
-	font-size: 2em;
+	font-size: 3em;
 }
 
-
-
-}
-
-body::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
-}
-
-body::-webkit-scrollbar
-{
-	width: 6px;
-	background-color: #F5F5F5;
-}
-
-body::-webkit-scrollbar-thumb
-{
-	background-color: #333333;
 }

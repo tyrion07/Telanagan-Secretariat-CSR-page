@@ -48,3 +48,4 @@ function showSlides1() {
 	f = 0;
     timeoutID = setTimeout(showSlides1, 10000);
 }
+
