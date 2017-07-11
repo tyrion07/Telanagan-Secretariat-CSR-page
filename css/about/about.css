@@ -7,24 +7,52 @@
 	overflow:auto;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
 .abt-ele {
 	display:block;
 	margin: 4%;
 	overflow: auto;
 }
 
-hr {
-	width: auto;
-	margin: 0.5em 0px;
+.abt-ele hr {
+	width: 30%;
+	margin: 0.5em auto;
+	background-color: #448D00;
+	height: 1.5px;
+	border: 0px;
 }
 
+.abt-ele p {
+	margin: 2em 0em;
+	line-height: 1.5;
+	text-indent: 2em;
+	
+}
+
+.abt-ele h2 {
+	color: #333;
+	text-align:center;
+}
+
+.faq ol
+{
+	visibility:visible;
+	margin: 1em 0em;
+}
+
+.faq ol li
+{
+	list-style-type:decimal;
+}
+
+.faq ul li
+{
+	list-style-type: disc;
+}
+
+.faq li
+{
+	margin: 1em 0em;
+}
 
 @-webkit-keyframes fade {
   from {opacity: .4} 

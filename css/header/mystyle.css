@@ -66,17 +66,6 @@ img.emblem {
 	padding: 5px;
 }
 
-ul.navlist {
-	list-style-type: none;
-	margin-left: 0%;
-}
-
-li.navitem {
-	margin: 5px 10px;
-	display: inline;
-	float:left;
-}
-
 button{
 	cursor: pointer;
 }
