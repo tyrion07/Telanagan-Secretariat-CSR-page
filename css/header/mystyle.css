@@ -3,7 +3,7 @@ body
 	font-family: Verdana, Geneva, sans-serif;
 	margin: 0px;
 	z-index:-20;
-	height: 3000px;
+	height: auto;
 	background: rgba(68, 141, 0, 0.7)
 }
 
