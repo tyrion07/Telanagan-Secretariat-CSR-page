@@ -78,6 +78,7 @@ button.login {
 	border-style:hidden;
 	box-shadow:none;
 	outline: none;
+	border-radius: 2px;
 	
 	width: 8em;
 	height: 3em;
@@ -96,9 +97,11 @@ button.login:hover {
 	height: 3em;
 	outline:none;
 	border:none;
+	padding: 0;
 	padding-left: 1em;
 	background-color:#333;
 	color: #ddd;
+	border-radius:2px;
 }
 
 .searchbox:placeholder-shown {
@@ -157,12 +160,13 @@ img.emblem {
 	width: 40px;
 }
 
-.ht-left, .ht-right {
+.ht-right {
 	display:block;
 	float: left;
 }
 
 .ht-left {
+	width: auto;
 }
 
 button.login {
@@ -195,6 +199,16 @@ input[type=text]:focus {
 }
 }
 
+@media only screen and (max-width: 320px)
+{
+	body {
+		font-size: 0.7em;
+	}
+	.img_em {
+		margin-left: 44%;
+	}
+	
+}
 @media only screen and (min-width: 1001px)
 {
 body::-webkit-scrollbar-track
