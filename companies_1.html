@@ -7,10 +7,10 @@
 <link rel="stylesheet" href="css/header/style1.css" />
 <link href="css/header/mystyle.css" type="text/css" rel="stylesheet" />
 <link href="css/register_popup.css" type="text/css" rel="stylesheet" />
-<link href="css/about/about.css" type="text/css" rel="stylesheet" />
-
+<link href="css/companies/companies_1.css" type="text/css" rel="stylesheet" />
 </head>
-<body>
+
+<body id="body">
 <video autoplay loop class="back" id="video" muted plays-inline>
   <source src="videos/fbv.webm" type="video/webm">
   <source src="videos/fbv.mp4" type="video/mp4">
@@ -25,7 +25,6 @@
 		<img src="images/Emblem_of_India.svg.png" class="emblem">
 	</div>
 
-    	
     <div class="ht-left">
     	<h3 class="heading">
     	    CORPORATE SOCIAL RESPONSIBILITY
@@ -112,8 +111,7 @@
         		</tr>
         		</table>
                 
-            	<p align="center" id="para_already_signin">
-                <a href="signin/signin.html"><font color="black">Already a Memeber? SIGNIN</font></a>
+            	<p href="signin/signin.html"><font color="black">Already a Memeber? SIGNIN</font></a>
                 </p>
                 
             	</div>
@@ -214,21 +212,100 @@ $(window).scroll(function(){
 </script>
 <div class="fake-head"></div>
 
-<!-- header ends -->
+<!-- header ends-->
 
-<div class="about fade">
+<div class="fade comp">
+<div class="incomp">
 
-	<div class="abt-ele">
+<h2>COMPANIES</h2>
+<hr>
 
-		<h2>ABOUT THE CSR PORTAL</h2>
-		<hr>
-		<p>
-		The main objective of this web portal is to identify and list the CSR activities and monitor their progress. The portal is designed to be a one-stop solution for all the stakeholders, regarding CSR activities in the state. It helps in proper channelizing of CSR funds and helps in effective management of projects. It also assists companies in choosing a relevant CSR activity and is also a source of information for the Government and other agencies.
-        </p>
+	<div class="catbar">
+		<p class="showcat">Show Category:</p>
+		<div class="catmenu">
+			<button class="catbtn">All</button>
+				<div class="panel">
+                <button class="category">ALL</button><br />
+				<button class="category">PRIVATE</button><br />
+				<button class="category">PUBLIC</button><br />
+				<button class="category">PROPRIETORSHIP</button>
+				</div>
 		</div>
 	</div>
+<script>
+var acc = document.getElementsByClassName("catbtn");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
+	<div class="comp-ele">
+    <a href="http://google.com" class="mylink"><span> </span></a>
+    	<div class="comp-cover">
+			<div class="comp-img">
+			<img src="images/background.jpg">
+			</div>
+        
+			<div class="comp-data">
+			<h4>FACEBOOK</h4>
+        	<div>SOCIAL NETWORKING SITE</div>
+			</div>
+        </div>
+        
+        <div class="comp-link"><a href="http://www.facebook.com/" class="link"><i>www.facebook.com</i></a></div>
+	</div>
+    
+    <div class="comp-ele">
+    <a href="http://google.com" class="mylink"><span> </span></a>
+    	<div class="comp-cover">
+			<div class="comp-img">
+			<img src="images/background.jpg">
+			</div>
+        
+			<div class="comp-data">
+			<h4>FACEBOOK</h4>
+        	<div>SOCIAL NETWORKING SITE</div>
+			</div>
+        </div>
+        
+        <div class="comp-link"><a href="http://www.facebook.com/" class="link"><i>www.facebook.com</i></a></div>
+	</div>
+    
+    <div class="comp-ele">
+    <a href="http://google.com" class="mylink"><span> </span></a>
+    	<div class="comp-cover">
+			<div class="comp-img">
+			<img src="images/background.jpg">
+			</div>
+        
+			<div class="comp-data">
+			<h4>FACEBOOK</h4>
+        	<div>SOCIAL NETWORKING SITE</div>
+			</div>
+        </div>
+        
+        <div class="comp-link"><a href="http://www.facebook.com/" class="link"><i>www.facebook.com</i></a></div>
+	</div>
+
+
+
 
 </div>
+</div>
+
+<script>
+$('.comp-img').height($('.comp-img').width());
+</script>
 
 </body>
 </html>
