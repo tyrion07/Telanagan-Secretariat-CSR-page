@@ -7,7 +7,9 @@
 <link rel="stylesheet" href="css/header/style1.css" />
 <link href="css/header/mystyle.css" type="text/css" rel="stylesheet" />
 <link href="css/register_popup.css" type="text/css" rel="stylesheet" />
+
 <link href="css/companies/companies_1.css" type="text/css" rel="stylesheet" />
+<link href="css/companies/companies_2.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body id="body">
@@ -217,84 +219,53 @@ $(window).scroll(function(){
 <div class="fade comp">
 <div class="incomp">
 
-<h2>COMPANIES</h2>
+<h2>COMPANY DETAILS</h2>
 <hr>
 
-	<div class="catbar">
-		<p class="showcat">Show Category:</p>
-		<div class="catmenu">
-			<button class="catbtn">All</button>
-				<div class="panel">
-                <button class="category">ALL</button><br />
-				<button class="category">PRIVATE</button><br />
-				<button class="category">PUBLIC</button><br />
-				<button class="category">PROPRIETORSHIP</button>
-				</div>
-		</div>
-	</div>
-<script>
-var acc = document.getElementsByClassName("catbtn");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  }
-}
-</script>
+<h3>FACEBOOK</h3>
 
 	<div class="comp-ele">
-    <a href="companies_2.html" class="mylink"><span> </span></a>
-    	<div class="comp-cover">
-			<div class="comp-img">
+		<div class="comp-img">
 			<img src="images/background.jpg">
-			</div>
+		</div>
         
-			<div class="comp-data">
-			<h4>FACEBOOK</h4>
-        	<div>SOCIAL NETWORKING SITE</div>
-			</div>
+        <div class="comp-data">
+        <ul>
+        	<li class="first">
+            	<h4>Company Name</h4>
+            	<p>Facebook</p>
+        	</li>
+            
+            <div class="details">
+            <ul>
+            	<li>
+                	<h4>Type</h4>
+                    <p>Social Networking Site</p>
+                </li>
+                
+                <li>
+                	<h4>URL</h4>
+                    <p><a href="http://www.facebook.com">http://www.facebook.com</a></p>
+                </li>
+                
+                <li>
+                	<h4>Contact Person</h4>
+                    <p>Mark Zuckerberg</p>
+                </li>
+                
+                <li>
+                	<h4>Contact Email</h4>
+                    <p>zuck@facebook.com</p>
+                </li>
+            </ul>
+            </div>
+            
+            <li class="last">
+            	<h4>Address</h4>
+            	<p>Facebook Headquarters 1 Hacker Way Menlo Park, CA 94025</p>
+        	</li>
+        </ul>
         </div>
-        
-        <div class="comp-link"><a href="http://www.facebook.com/" class="link"><i>www.facebook.com</i></a></div>
-	</div>
-    
-    <div class="comp-ele">
-    <a href="companies_2.html" class="mylink"><span> </span></a>
-    	<div class="comp-cover">
-			<div class="comp-img">
-			<img src="images/background.jpg">
-			</div>
-        
-			<div class="comp-data">
-			<h4>FACEBOOK</h4>
-        	<div>SOCIAL NETWORKING SITE</div>
-			</div>
-        </div>
-        
-        <div class="comp-link"><a href="http://www.facebook.com/" class="link"><i>www.facebook.com</i></a></div>
-	</div>
-    
-    <div class="comp-ele">
-    <a href="companies_2.html" class="mylink"><span> </span></a>
-    	<div class="comp-cover">
-			<div class="comp-img">
-			<img src="images/background.jpg">
-			</div>
-        
-			<div class="comp-data">
-			<h4>FACEBOOK</h4>
-        	<div>SOCIAL NETWORKING SITE</div>
-			</div>
-        </div>
-        
-        <div class="comp-link"><a href="http://www.facebook.com/" class="link"><i>www.facebook.com</i></a></div>
 	</div>
 
 

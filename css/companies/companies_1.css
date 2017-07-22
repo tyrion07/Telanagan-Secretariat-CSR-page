@@ -1,19 +1,17 @@
-
-
-
 .comp {
 	width: 90%;
 	background-color: #fff;
 	border-radius: 2px;
 	position: relative;
 	margin: 1em auto;
-	
+	overflow: auto;
 }
 
 .incomp {
 	display:block;
 	width: 92%;
 	margin: 0 4%;
+	margin-bottom: 2em;
 	overflow: auto;
 }
 
@@ -135,7 +133,7 @@ button.catbtn.active {
 	width: 20%;
 	position: relative;
 	background-color:#eee;
-	border: 1px solid #ddd;
+	border: 1px solid #eee;
 }
 
 .comp-img img
@@ -162,7 +160,7 @@ button.catbtn.active {
 	font-size:0.9em;
 }
 
-.comp-data h4 {
+.comp-data h4{
 	font-size:1.2em;
 	margin: 0.5em 0;
 	font-weight:750;
